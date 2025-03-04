@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 380px; /* Keeps it compact */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(16px, 4vw, 24px); /* Auto-scaling */
+    color: #2a7faa;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.3);
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #2a7faa;
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 1px;
+}
+
+p {
+    font-size: clamp(12px, 2vw, 14px); /* Auto-scaling */
+    color: black;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    max-width: 90%;
+}
+
+a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #2a7faa;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+a[href="LandingPage.html"] {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold;
+    display: inline-block; /* Allows padding to take effect */
+    margin-top: 20px; /* Add spacing from the navigation */
+    text-decoration: none;
+    color: #2a7faa; /* Match navigation color */
+    padding: 12px 20px; /* Increase padding */
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a[href="LandingPage.html"]:hover {
+    background-color: #005f99;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,66 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling (Smaller) */
+h1 {
+    color: white;
+    background-color: #2a7faa; /* Dark Blue Header */
+    padding: 15px; /* Reduced padding */
+    font-size: 28px; /* Smaller text */
+    margin: 0;
+    border-radius: 8px;
+}
+
+/* Navigation Menu (Smaller) */
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #2a7faa; /* Blue Navigation */
+    margin: 15px auto; /* Reduced margin */
+    width: 50%; /* Reduced width */
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px; /* Reduced font size */
+    font-weight: bold;
+    padding: 12px 20px; /* Reduced padding */
+    display: inline-block;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    background-color: #005f99;
+    border-radius: 8px;
+}
+
+a[href="LandingPage.html"] {
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+    display: inline-block; /* Allows padding to take effect */
+    margin-top: 20px; /* Add spacing from the navigation */
+    text-decoration: none;
+    color: #2a7faa; /* Match navigation color */
+    padding: 12px 20px; /* Increase padding */
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+a[href="LandingPage.html"]:hover {
+    background-color: #005f99;
+    color: white;
+}

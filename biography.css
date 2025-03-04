@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+/* Portrait-friendly container */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    max-width: 450px;
+    max-height: 90vh; /* Ensures everything fits on the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Ensures full centering */
+    gap: 12px; /* Adds space between elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Center and style h1 */
+h1 {
+    font-size: 2.4em; /* Larger than h2 */
+    color: #2a7faa;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(255, 0, 0, 0.4);
+    margin-bottom: 12px;
+}
+
+/* Style h2 */
+h2 {
+    font-size: 1.8em;
+    color: #2a7faa;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px rgba(255, 0, 0, 0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures full centering */
+}
+
+/* Lines above and below h2 */
+h2::before, h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: blueviolet;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px 40px; /* Increased side margins */
+    text-indent: 30px;
+    color: black;
+    flex-grow: 1; /* Ensures it takes available space */
+}
+
+a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #2a7faa;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #2a7faa;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Responsive for smaller portrait screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+        max-height: 92vh;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+        padding: 10px 30px;
+    }
+}
